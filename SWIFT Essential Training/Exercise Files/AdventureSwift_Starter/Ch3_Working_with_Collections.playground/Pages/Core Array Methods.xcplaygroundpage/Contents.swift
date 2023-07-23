@@ -17,13 +17,29 @@
  
  */
 // Changing & appending items
+var characterClasses = ["Ranger", "Paladin", "Druid"]
+characterClasses.append("Gunslinger")
+characterClasses+=["Healer","Berserker"]
+print(characterClasses)
 
 
 //Inserting and removing items
-
+characterClasses.insert("Beast Master", at: 2)
+characterClasses.remove(at: 1)
 
 // Ordering and querying values
+characterClasses.sort()
+var sortedClasses = characterClasses.sorted()
 
+characterClasses.reverse()
+var reversedClasses = characterClasses.reversed()
 
 // 2D arrays and subscripts
+var skillTree: [[String]] = [
+    ["Attack+", "Barrage", "Heavy Hitter"],
+    ["Guard+", "Evasion", "Run"]
+]
+print(skillTree)
 
+var attackTreeSkill = skillTree[0][2]
+print(attackTreeSkill)

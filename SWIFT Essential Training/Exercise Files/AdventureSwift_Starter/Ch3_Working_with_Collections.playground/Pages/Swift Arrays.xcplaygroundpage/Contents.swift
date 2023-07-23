@@ -15,10 +15,13 @@
  
  */
 // Creating arrays
-
+var levelDifficulty: [String] = ["Easy", "Moderate","Veteran", "Nightmare"]
 
 // Count and isEmpty
-
+levelDifficulty.count
+levelDifficulty.isEmpty
 
 // Accessing array values
-
+print(levelDifficulty[0])
+levelDifficulty[0] = "ezz"
+print(levelDifficulty[0])

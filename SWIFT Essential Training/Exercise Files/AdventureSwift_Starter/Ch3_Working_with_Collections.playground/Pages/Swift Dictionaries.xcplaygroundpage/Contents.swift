@@ -15,10 +15,12 @@
 
  */
 // Creating dictionaries
-
+var blackSmithShop = ["Bottle":5, "Shield":10, "Ocarina":1000]
 
 // Accessing and modifying values
-
+var bottlePrice = blackSmithShop["Bottle"]
+blackSmithShop["Shield"] = 999
 
 // All keys and values
-
+var allKeys = [String](blackSmithShop.keys)
+var allValues = blackSmithShop.values
